@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url("/img/img1.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 5px;
+}
+#navbar img{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+#navbar .menu{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#navbar ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+#navbar .menu li::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: 0.5s;
+}
+#navbar .menu li:hover::after{
+    width: 100%;
+}
+#navbar .menu li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 20%;
+}
+#home p{
+    padding: 20px 15%;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.button .btn{
+    font-size: 1rem;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+span{
+    background-color: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+/* Utilities class */
+.m-font{
+    color: white;
+    font-size: 1.1rem;
+}
+.h-primary{
+    font-size: 5rem;
+    color: white;  
+    text-transform: uppercase;
+    font-weight: 600;  
+}
+.h-secondary{
+    font-size: 1.2rem;
+    color: white;    
+}
+
+.center{
+    text-align: center;
+}

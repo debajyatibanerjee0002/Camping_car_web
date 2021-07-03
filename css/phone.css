@@ -1,0 +1,44 @@
+/* navigation bar */
+#navbar img{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+#navbar ul li a{
+    margin: 3px;
+}
+/* Home section */
+button{
+    width: 100px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+/* Utilities class */
+.m-font{
+    color: white;
+    font-size: 1rem;
+}
+.h-primary{
+    font-size: 2rem;
+    color: white;  
+    text-transform: uppercase;
+    font-weight: 600;  
+}
+.h-secondary{
+    font-size: 0.7rem;
+    color: white;    
+}
+
+.center{
+    text-align: center;
+}
